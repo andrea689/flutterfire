@@ -1,0 +1,31 @@
+name: cloud_firestore_web
+description: Web platform implementation of cloud_firestore
+version: 0.1.0
+author: 
+homepage:
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: CloudFirestorePlugin
+        fileName: cloud_firestore_web.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  meta: ^1.1.7
+  js: ^0.6.0
+  firebase: ^7.0.0
+  cloud_firestore_platform_interface:
+    path: ../cloud_firestore_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+  flutter: ">=1.5.0 <2.0.0"
