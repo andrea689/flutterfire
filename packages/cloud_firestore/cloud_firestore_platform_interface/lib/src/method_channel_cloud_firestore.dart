@@ -243,8 +243,8 @@ class MethodChannelCloudFirestore extends CloudFirestorePlatform {
     );
   }
 
-  static final Map<int, StreamController<int>> _queryObservers =
-      <int, StreamController<int>>{};
+  static final Map<int, StreamController<dynamic>> _queryObservers =
+      <int, StreamController<dynamic>>{};
 
   @override
   Stream<dynamic> getQuerySnapshots(
